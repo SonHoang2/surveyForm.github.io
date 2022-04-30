@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">When we eat</h1>
+        </header>
+        <form id="survey-form" action="/login" method="POST">
+            <div class="form-group">
+                <label class="label" for="name"> Name </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+            </div>
+            <div class= "form-group">
+                <p class="form-group__text">Menu</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option value="nem nướng">Nem nướng</option>
+                    <option value="topokki">Topokki</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="label" for="day">Date</label>
+                <input type="text" id="day" class="form-control" name="date" placeholder="The day you want to go" required>
+            </div>
+            <div class="form-group">
+                <p class="form-group__text">Feedback</p>      
+                <textarea class="input-textarea" name="comment" placeholder="Write something"></textarea>    
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+    --color-white:  #f3f3f3;
+    --color-pink: #ff00bf;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --color-purple: #673ab7;
+    --color-l-purple: #9a67ea;
+    --color-d-purple: #320b86;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    
+}
+
+.container{
+    width: 100%;
+    margin: 40px auto 0 auto;
+    max-width: 900px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 3rem;
+}
+
+.label,
+.form-group__text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+}
+
+#survey-form {
+    background-color: var(--color-l-purple);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.input-textarea {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.input-textarea:focus {
+    outline: none;
+}
+
+#submit {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-d-purple);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+}
+
+#submit:hover { 
+    cursor: pointer;
+    background-color: #5b33b1;
+}
